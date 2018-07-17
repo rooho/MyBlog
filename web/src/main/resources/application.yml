@@ -1,0 +1,43 @@
+server:
+  port: 8081
+
+spring:
+  devtools:
+    enabled: true
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 66666666
+
+  freemarker:
+    template-loader-path:
+    - classpath:/templates
+    - file:./templates
+    cache: false
+    checkTemplateLocation: false
+    settings:
+      classic_compatible: true #处理空值
+      template_exception_handler: rethrow
+      template_update_delay: 0
+      datetime_format: yyyy-MM-dd HH:mm
+      number_format: 0.##
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  thymeleaf:
+    cache: false
+    suffix: .html
+    encoding: utf-8
+    mode: LEGACYHTML5
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+
+site:
+    theme: default
