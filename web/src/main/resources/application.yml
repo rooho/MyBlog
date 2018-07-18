@@ -12,9 +12,7 @@ spring:
     password: 66666666
 
   freemarker:
-    template-loader-path:
-    - classpath:/templates
-    - file:./templates
+    template-loader-path: classpath:/templates/
     cache: false
     checkTemplateLocation: false
     settings:
