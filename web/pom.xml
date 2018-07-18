@@ -56,6 +56,13 @@
 			<artifactId>core</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+
+		<!-- spring loaded -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>springloaded</artifactId>
+			<version>1.2.7.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>
